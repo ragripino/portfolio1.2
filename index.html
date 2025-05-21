@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubia Agripino | Front-End Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">Rubia Agripino</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+      </nav>
+      <script>
+        function toggleTheme() {
+          document.body.classList.toggle("dark-theme");
+        }
+      </script>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Hi, I am <span class="highlight">Rubia Agripino!</span></h1>
+      <p class="subtitle">
+        Front End-Developer, turning ideas into interactive web experiences
+      </p>
+      <img src="img/IMG_3797.png" alt="Rubia Agripino" class="profile-img" />
+      <p class="description">
+        A curious and driven student currently pursuing associate degree in
+        Business Administration and Web & Mobile Application Development at
+        College of San Mateo.
+      </p>
+      <div class="buttons">
+        <a
+          href="https://www.linkedin.com/in/rubia-agripino-1471a8192/"
+          class="btn"
+          >LinkedIn</a
+        >
+        <a href="#" class="btn">Resume</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        Coded with love by 👩‍💻
+        <a
+          href="https://www.linkedin.com/in/rubia-agripino-1471a8192/"
+          target="_blank"
+        >
+          Rubia Agripino</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Rubia Agripino</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Rubia Agripino</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+      </nav>
+      <script>
+        function toggleTheme() {
+          document.body.classList.toggle("dark-theme");
+        }
+      </script>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mwpowjnl" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone number (optional)</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+
+          <div class="form-group">
+            <label for="topic">What is this regarding?</label>
+            <select id="topic" name="topic" required>
+              <option value="">Select a topic</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="freelance">Freelance Project</option>
+              <option value="mentorship">Mentorship</option>
+              <option value="just-chat">Just to Say Hi</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <div class="form-group checkbox">
+            <label>
+              <input type="checkbox" required />
+              I consent to my data being used to contact me back.
+            </label>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        Coded with love by 👩‍💻
+        <a
+          href="https://www.linkedin.com/in/rubia-agripino-1471a8192/"
+          target="_blank"
+        >
+          Rubia Agripino</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

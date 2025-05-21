@@ -1,0 +1,319 @@
+body {
+  flex: 1;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #4a5b2c;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #666;
+}
+
+.profile-img {
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.description {
+  max-width: 600px;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #654131;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  margin-top: auto;
+}
+
+footer a {
+  color: #4a5b2c;
+  text-decoration: none;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.socials img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-content .text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-content h1 {
+  color: #4a5b2c;
+}
+
+.about-content h3 {
+  font-weight: normal;
+  margin-top: 10px;
+  color: #444;
+}
+
+.about-content p {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.skills ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+  color: #4a5b2c;
+  font-weight: 600;
+}
+
+.about-image {
+  flex-shrink: 0;
+}
+
+.about-image img {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Projects */
+
+.center {
+  text-align: center;
+}
+
+.projects-section {
+  padding: 60px 5%;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-text {
+  padding: 15px;
+}
+
+.project-text h3 {
+  margin: 0;
+  color: #000;
+  font-weight: 600;
+}
+
+.project-text p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Contact Section */
+
+.contact {
+  padding: 3rem 2rem;
+  background: #fdfdfb;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  text-align: center;
+  color: #364f1a;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+input,
+textarea,
+select {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-right: 0.5rem;
+}
+
+button[type="submit"] {
+  background-color: #364f1a;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #2a3b13;
+}
+
+.more {
+  background-color: #654131;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+}
+.more:hover {
+  background-color: #4a5b2c;
+  text-decoration: underline;
+}
